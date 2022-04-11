@@ -1,0 +1,20 @@
+CREATE TABLE videogames (id INTEGER PRIMARY KEY, name TEXT, price INTEGER, rating INTEGER, released INTEGER, in_stock INTEGER);
+
+INSERT INTO videogames VALUES (1, "tombraider", 60, 5, 2000, 2);
+INSERT INTO videogames VALUES (2, "madden", 50, 4, 2001, 4);
+INSERT INTO videogames VALUES (3, "wwe", 30, 3, 2004, 3);
+INSERT INTO videogames VALUES (4, "tonyhawk", 50, 4, 2004, 1);
+INSERT INTO videogames VALUES (5, "ffxiv", 0, 5, 2014, 9);
+INSERT INTO videogames VALUES (6, "wow", 15, 0, 2005, 5);
+INSERT INTO videogames VALUES (7, "deadside", 20, 4, 2019, 1);
+INSERT INTO videogames VALUES (8, "d&d", 90, 5, 1984, 9);
+INSERT INTO videogames VALUES (9, "cod", 40, 3, 2001, 11);
+INSERT INTO videogames VALUES (10, "crackdown", 30, 2, 2007, 1);
+INSERT INTO videogames VALUES (11, "life", 1, 1, 1, 1);
+INSERT INTO videogames VALUES (12, "sonic", 25, 3, 1994, 6);
+INSERT INTO videogames VALUES (13, "dayz", 50, 3, 2017, 4);
+INSERT INTO videogames VALUES (14, "conquer", 16, 1, 2003, 8);
+INSERT INTO videogames VALUES (15, "gta", 60, 4, 1999, 5);
+
+SELECT * FROM videogames ORDER BY price desc;
+SELECT SUM(in_stock) FROM videogames;
